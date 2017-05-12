@@ -1,17 +1,17 @@
 <?php
 
-    if(!empty($_POST))
+    if(!empty($_GET))
     {   
         // Retrieve data
-        $town = trim($_POST['town']);
+        $city = trim($_GET['city']);
         
         // Detect if empty
-        if(!empty($town))
+        if(!empty($city))
             header('location : weather.php'); 
     }
     // No data sent
     else
     {
         // Default values
-        $_POST['town']      = '';
+        $_GET['city']      = '';
     }

@@ -1,7 +1,3 @@
-<?php
-    include 'includes/handle_form.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,11 +15,11 @@
    <div class="container-fluid home">
       <div class="row">
             <pre class="col-md-offset-2 col-sm-8 col-sm-offset-2 col-md-8 col-xs-12">
-                <form class="form-horizontal" action="#" method="GET">
+                <form class="form-horizontal" action="weather.php" method="get">
                     <div class="form-group form-group-lg text-center">
-                        <label class="col-md-12 col-sm-12 col-xs-12" for="town" class="control-label">Your city</label>
+                        <label class="col-md-12 col-sm-12 col-xs-12" for="city" class="control-label">Your city</label>
                         <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-                            <input type="text" class="form-control" id="town" placeholder="Paris">
+                            <input type="text" class="form-control" id="city" placeholder="Paris" name="city" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -35,8 +31,6 @@
             </pre>
       </div>
     </div>
-   
-    <script src="assets/js/main.min.js"></script>
 </body>
 
 </html>
