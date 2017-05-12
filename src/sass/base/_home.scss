@@ -1,24 +1,29 @@
-.home
+.container-fluid.home
 {
     overflow: hidden;
+    background: #eef0f0;
+    height: 100vh;
 }
 
-.home pre
+.container-fluid.home pre
 {
     overflow: inherit;
     height: 80vh;
     margin-top: 10vh;
+    background: #fefefe;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
 }
 
-.home pre label
+.container-fluid.home pre label
 {
     font-size: 20px;
-    color: #2c2c2c;
 }
 
 @media screen and (max-width: 767px)
 {
-    .home pre
+    .container-fluid.home pre
     {
         border: none;
         height: 100vh;

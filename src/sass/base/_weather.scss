@@ -1,0 +1,57 @@
+.container-fluid.weather
+{
+    background: #eef0f0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.weather .weather-card
+{
+    background: #fefefe;
+    border: none;
+    border-radius: 16px;
+    margin: none;
+    padding: none;
+    margin-top: 10vh;
+    margin-left: 10vh;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+}
+
+.weather-card .main-infos
+{
+    padding: 14px;
+}
+
+.weather-card .main-infos .town
+{
+    margin-top: 14px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.weather-card .main-infos .weather-state
+{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.weather-card .main-infos .temperature
+{
+    font-size: 38px;
+}
+
+.weather-card .delete-card,
+.weather-card .more-infos
+{
+    border-radius: 16px;
+    font-size: 18px;
+    display: block;
+    width: inherit;
+    margin-right: 7px;
+}
+
+.weather-card .more-infos
+{
+    margin-top: 28px;
+    font-size: 10px;
+}
