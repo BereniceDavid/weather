@@ -1,10 +1,14 @@
+<?php
+    include 'includes/handle_form.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-    <title>Weather</title>
+    <title>Home</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <link href="assets/css/app.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -15,7 +19,7 @@
    <div class="container-fluid home">
       <div class="row">
             <pre class="col-md-offset-2 col-sm-8 col-sm-offset-2 col-md-8 col-xs-12">
-                <form class="form-horizontal" method="GET" action="#">
+                <form class="form-horizontal" action="#" method="GET">
                     <div class="form-group text-center">
                         <label class="col-md-12 col-sm-12 col-xs-12" for="town" class="control-label">Entrez votre ville</label>
                         <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
