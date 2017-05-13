@@ -1,17 +1,11 @@
 <?php
 
+    $cities = array();
+
     if(!empty($_GET))
-    {   
         // Retrieve data
-        $city = trim($_GET['city']);
-        
-        // Detect if empty
-        if(!empty($city))
-            header('location : weather.php'); 
-    }
-    // No data sent
-    else
-    {
-        // Default values
+        array_push( $cities, trim(strtolower($_GET['city'])) );
+    
+    else 
+        // No data send
         $_GET['city']      = '';
-    }

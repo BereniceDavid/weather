@@ -14,7 +14,6 @@
     margin: none;
     padding: none;
     margin-top: 10vh;
-    margin-left: 10vh;
     box-shadow: 0 1px 3px rgba(0,0,0,0.25);
 }
 
@@ -58,4 +57,17 @@
 {
     margin-top: 28px;
     font-size: 10px;
+}
+
+.add-card .add
+{
+    color: #e2e2e2;
+    font-size: 60px;
+    padding: 67px;
+    cursor: pointer;
+}
+
+.add-card .add:hover
+{
+    color: #b5b5b5;
 }

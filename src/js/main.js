@@ -2,7 +2,6 @@ var weather_cards = document.querySelectorAll('.weather .weather-card');
 
 for(var i = 0; i < weather_cards.length; i++)
 {
-    console.log(weather_cards[i]);
     if (weather_cards[i].classList.contains('Rain'))
         weather_cards[i].style.background = "#004986";    
     
