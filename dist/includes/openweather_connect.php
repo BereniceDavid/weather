@@ -1,14 +1,14 @@
 <?php
 
-    if (!empty($_SESSION['cities']))
+    function get_data($_city)
     {
         // Set up
-        $url = 'http://api.openweathermap.org/data/2.5/forecast?q='.$_SESSION['cities'][0].'&units=metric&APPID=9e8150c9d6fbf87d678d2cf7f7a2c00a';
+        $url = 'http://api.openweathermap.org/data/2.5/forecast?q='.$_city.'&units=metric&APPID=9e8150c9d6fbf87d678d2cf7f7a2c00a';
         $path = './cache/'.md5($url.date('Y-m-d H'));
 
         // From cache
         if(file_exists($path))
-        $forecast = file_get_contents($path);
+            $forecast = file_get_contents($path);
 
         // From API
         else
@@ -22,4 +22,6 @@
 
         // Json decode
         $forecast = json_decode($forecast);
+        
+        return $forecast;
     }

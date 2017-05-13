@@ -1,8 +1,13 @@
-.container-fluid.weather
+body
 {
     background: #eef0f0;
+}
+
+.container-fluid.weather
+{
+//    background: #eef0f0;
     width: 100vw;
-    height: 100vh;
+    height: auto;
 }
 
 .weather .weather-card
@@ -72,6 +77,7 @@
 {
     padding-top: 48px;
     padding-bottom: 48px;
+    color: #2C2C2C;
 }
 
 .add-card .add:hover
