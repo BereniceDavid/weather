@@ -1,9 +1,9 @@
 <?php
 
-    if (!empty($cities))
+    if (!empty($_SESSION['cities']))
     {
         // Set up
-        $url = 'http://api.openweathermap.org/data/2.5/forecast?q='.$cities[0].'&units=metric&APPID=9e8150c9d6fbf87d678d2cf7f7a2c00a';
+        $url = 'http://api.openweathermap.org/data/2.5/forecast?q='.$_SESSION['cities'][0].'&units=metric&APPID=9e8150c9d6fbf87d678d2cf7f7a2c00a';
         $path = './cache/'.md5($url.date('Y-m-d H'));
 
         // From cache

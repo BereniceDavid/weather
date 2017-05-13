@@ -63,8 +63,15 @@
 {
     color: #e2e2e2;
     font-size: 60px;
-    padding: 67px;
+    padding-top: 33.5px;
+    padding-bottom: 33.5px;
     cursor: pointer;
+}
+
+.add-card .form-horizontal
+{
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .add-card .add:hover

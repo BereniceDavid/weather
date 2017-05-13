@@ -1,4 +1,8 @@
 <?php
+    session_start();
+
+    $_SESSION['cities'] = array();
+    
     include "includes/handle_form.php";
     include "includes/openweather_connect.php";
 ?>
@@ -20,8 +24,8 @@
     <div class="container-fluid weather">
         <div class="row">
            
-            <?php if (!empty($cities)): ?>
-                <? foreach ($cities as $_city): ?>
+            <?php if (!empty($_SESSION['cities'])): ?>
+                <? foreach ($_SESSION['cities'] as $_city): ?>
                     <div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-6 col-xs-offset-3 weather-card show <?= $forecast->list[0]->weather[0]->main ?>">
                 <div class="main-infos">
                     <div class="row">
@@ -65,8 +69,8 @@
             <div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-6 col-xs-offset-3 weather-card show add-card">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <div class="add show">+</div>
-                        <form class="form-horizontal hidden" action="weather.php" method="get">
+                        <div class="add hidden">+</div>
+                        <form class="form-horizontal show" action="#" method="get">
                             <div class="form-group form-group-small text-center">
                                 <label class="col-md-12 col-sm-12 col-xs-12" for="city" class="control-label">Your city</label>
                                 <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
