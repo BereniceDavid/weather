@@ -14,3 +14,10 @@ for(var i = 0; i < weather_cards.length; i++)
     else
         weather_cards[i].style.background = "#fefefe";
 }
+
+// Submit weather.php form on enter
+function checkSubmit(event) {
+   if(event && event.keyCode == 13) {
+      document.forms[0].submit();
+   }
+}
