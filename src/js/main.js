@@ -8,7 +8,7 @@ for(var i = 0; i < weather_cards.length; i++)
         weather_cards[i].style.background = "#336086";    
     
     else if (weather_cards[i].classList.contains('Clouds'))
-        weather_cards[i].style.background = "#50677b";
+        weather_cards[i].style.background = "#667a8d";
     
     else if (weather_cards[i].classList.contains('Drizzle'))
         weather_cards[i].style.background = "#557691";
@@ -45,3 +45,22 @@ function checkSubmit(event)
         document.forms[0].submit();
     }
 }
+
+// Get add card elements
+var add_card_cross = document.querySelector('.weather .add-card .add');
+var add_card_form = document.querySelector('.weather .add-card .form-horizontal');
+
+add_card_cross.addEventListener('click', function()
+{
+    if (add_card_cross.classList.contains('show'))
+    {
+        add_card_cross.classList.remove('show');
+        add_card_cross.classList.add('hidden');
+        
+        if (add_card_form.classList.contains('hidden'))
+        {
+            add_card_form.classList.remove('hidden');
+            add_card_form.classList.add('show');
+        }
+    }
+});

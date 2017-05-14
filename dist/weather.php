@@ -108,8 +108,8 @@
             <div class="col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2 weather-card show add-card">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                        <div class="add hidden">+</div>
-                        <form class="form-horizontal show" action="#" method="get">
+                        <div class="add show">+</div>
+                        <form class="form-horizontal hidden" action="#" method="get">
                             <div class="form-group form-group-small text-center">
                                 <label class="col-md-12 col-sm-12 col-xs-12" for="city" class="control-label">Enter a city</label>
                                 <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
