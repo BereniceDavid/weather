@@ -5,11 +5,11 @@ body
 
 .container-fluid.weather
 {
-//    background: #eef0f0;
     width: 100vw;
     height: auto;
 }
 
+// Weather card
 .weather .weather-card
 {
     background: #2C2C2C;
@@ -22,6 +22,7 @@ body
     box-shadow: 0 1px 3px rgba(0,0,0,0.25);
 }
 
+// main infos
 .weather-card .main-infos
 {
     padding: 14px;
@@ -31,14 +32,12 @@ body
 {
     margin-top: 14px;
     font-size: 20px;
-    font-weight: 600;
 }
 
 .weather-card .main-infos .weather-state
 {
     font-size: 14px;
     margin-top: -2px;
-    font-weight: 300;
 }
 
 .weather-card .main-infos .temperature
@@ -64,6 +63,31 @@ body
     font-size: 10px;
 }
 
+.weather-card .temperature-date span span:nth-child(2)
+{
+    margin-left: 10px;
+}
+
+// Today's weather infos
+.weather-card .today-weather
+{
+    border-top: 1px solid rgba(254, 254, 254, 0.3);
+    padding: 14px;
+    font-size: 12px;
+}
+
+.weather-card .today-weather .row
+{
+    margin-bottom: 6px;
+}
+
+.weather-card .today-weather .icons span img
+{
+    width: 30px;
+    height: auto;
+}
+
+// Add a weather card
 .add-card .add
 {
     color: #e2e2e2;
