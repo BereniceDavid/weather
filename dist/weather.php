@@ -28,7 +28,9 @@
                     <div class="col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-8 col-xs-offset-2 weather-card show <?= $data->list[0]->weather[0]->main ?>">
                         <div class="main-infos">
                             <div class="row">
-                                <button type="button" class="pull-right close delete-card" aria-label="Close"><span>&times;</span></button>
+                                <a href="?delete_id=<?= $_city ?>">
+                                    <button type="button" class="pull-right close delete-card" aria-label="Close"><span>&times;</span></button>
+                                </a>
                             </div>
                             <div class="row">
                                 <div class="col-md-12 col-sm-12 col-xs-12 text-center">
