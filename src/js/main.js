@@ -46,10 +46,11 @@ function checkSubmit(event)
     }
 }
 
-// Get add card elements
+// Get add-card elements
 var add_card_cross = document.querySelector('.weather .add-card .add');
 var add_card_form = document.querySelector('.weather .add-card .form-horizontal');
 
+// Display form on cross click
 add_card_cross.addEventListener('click', function()
 {
     if (add_card_cross.classList.contains('show'))
@@ -62,5 +63,38 @@ add_card_cross.addEventListener('click', function()
             add_card_form.classList.remove('hidden');
             add_card_form.classList.add('show');
         }
+    }
+});
+
+// Get .see-more arrows
+var see_more_arrows = document.querySelector('.weather .weather-card .arrow');
+var see_more_arrow_up = document.querySelector('.weather .weather-card .arrow .glyphicon-chevron-up');
+var see_more_arrow_down = document.querySelector('.weather .weather-card .arrow .glyphicon-chevron-down');
+var see_more = document.querySelector('.weather .weather-card .see-more');
+
+// Display form on cross click
+see_more_arrows.addEventListener('click', function()
+{
+    if (see_more.classList.contains('hidden'))
+    {
+        see_more.classList.remove('hidden');
+        see_more.classList.add('show');
+        
+        see_more_arrow_down.classList.remove('show');
+        see_more_arrow_down.classList.add('hidden');
+        
+        see_more_arrow_up.classList.remove('hidden');
+        see_more_arrow_up.classList.add('show');
+    }
+    else if (see_more.classList.contains('show'))
+    {
+        see_more.classList.remove('show');
+        see_more.classList.add('hidden');
+        
+        see_more_arrow_down.classList.remove('hidden');
+        see_more_arrow_down.classList.add('show');
+        
+        see_more_arrow_up.classList.remove('show');
+        see_more_arrow_up.classList.add('hidden');
     }
 });

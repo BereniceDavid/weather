@@ -87,20 +87,48 @@ body
     height: auto;
 }
 
+// More infos dropdown
+.weather-card .arrow
+{
+    padding-top: 14px;
+    margin-top: 14px;  
+    font-size: 12px;
+    cursor: pointer;
+    border-top: 1px solid rgba(254, 254, 254, 0.3);
+}
+
+.weather-card .arrow .glyphicon
+{
+    margin-right: 6px;
+}
+
+.weather-card .arrow:hover {
+    opacity: 0.8;
+}
+
+.weather-card .see-more
+{
+    padding: 0 0 14px 0;
+    font-size: 12px;
+}
+
+.weather-card .see-more div
+{
+    margin-bottom: 4px;
+}
+
 // Add a weather card
 .add-card .add
 {
     color: #e2e2e2;
     font-size: 60px;
-    padding-top: 33.5px;
-    padding-bottom: 33.5px;
+    padding: 143px 0;
     cursor: pointer;
 }
 
 .add-card .form-horizontal
 {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding: 124px 0;
     color: #2C2C2C;
 }
 
